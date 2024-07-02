@@ -11,17 +11,33 @@ body {
     background: #ecf0f3;
 }
 
-.LoginPage {
+.styling {
     max-width: 350px;
     min-height: 500px;
-    margin: 80px auto;
+    margin: 80px auto 40px auto;
     padding: 40px 30px 30px 30px;
     background-color: #ecf0f3;
     border-radius: 15px;
     box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
 }
+.styling.list{
+    max-width: 800px;
+}
+.styling table{
+    width: 100%;
+    border: 1px solid blackl
+}
 
-.LoginPage .name {
+.styling .message{
+    color: green;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.styling .message.error{
+    color: red;
+}
+
+.styling .name {
     font-weight: 600;
     font-size: 1.4rem;
     letter-spacing: 1.3px;
@@ -29,7 +45,8 @@ body {
     color: #555;
 }
 
-.LoginPage .form-field input {
+.styling .form-field input ,
+.styling .form-field select{
     width: 100%;
     display: block;
     border: none;
@@ -41,7 +58,7 @@ body {
     
 }
 
-.LoginPage .form-field {
+.styling .form-field {
     padding-left: 10px;
     margin-bottom: 20px;
     border-radius: 20px;
@@ -49,7 +66,7 @@ body {
 }
 
 
-.LoginPage .btn {
+.styling .btn {
     box-shadow: none;
     width: 100%;
     height: 40px;
@@ -61,22 +78,26 @@ body {
     letter-spacing: 1.3px;
 }
 
-.LoginPage .btn:hover {
+.styling .btn:hover {
     background-color: #0068c3;
 }
 
-.LoginPage a {
-    text-decoration: none;
-    font-size: 0.8rem;
-    color: #03A9F4;
+.styling .footer-link{
+    margin-top: 20px;
+    text-align: center;
 }
 
-.LoginPage a:hover {
+.styling .footer-link .link {
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.styling a:hover {
     color: #039BE5;
 }
 
 @media(max-width: 380px) {
-    .LoginPage {
+    .styling {
         margin: 30px 20px;
         padding: 40px 15px 15px 15px;
     }
